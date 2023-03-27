@@ -62,7 +62,7 @@ public class program {
         num2 = scanner.nextDouble();
         System.out.println("Введите операцию (+, -, *, /):");
         char operator = scanner.next().charAt(0);
-
+        scanner.close();
         double result;
         switch(operator) {
             case '+':
@@ -81,7 +81,6 @@ public class program {
                 System.out.println("Операция не распознана!");
                 return;
         }
-
         System.out.println("Результат: " + result);
     }
 
@@ -118,6 +117,7 @@ public class program {
         {
             System.out.println(answer);
         }
+        scanner.close();
 
     }
     
